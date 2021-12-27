@@ -1,0 +1,242 @@
+//menu
+
+.page {
+
+   &__menu {
+      width: 227px;
+      padding-right: 25px;
+   }
+}
+
+.menu {
+
+   &__header {
+      display: none;
+   }
+
+   &__close {
+      position: relative;
+      cursor: pointer;
+      width: 14px;
+      height: 14px;
+      top: 8px;
+
+      &:before,
+      &:after {
+         right: 0;
+         position: absolute;
+         height: 8%;
+         width: 100%;
+         background-color: #fff;
+      }
+
+      &:before,
+      &:after {
+         content: "";
+      }
+
+      &:before {
+         top: 0;
+      }
+
+      &:after {
+         bottom: 0;
+      }
+
+      &:before {
+         top: 50%;
+         transform: rotate(-45deg) translate(0px, -50%);
+      }
+
+      &:after {
+         bottom: 50%;
+         transform: rotate(45deg) translate(0px, 50%);
+      }
+   }
+
+   &__price {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      margin-bottom: 45px;
+   }
+
+   &__price-logo {
+      width: 43px;
+      height: 43px;
+   }
+
+   &__price-amount {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0em;
+      color: var(--green);
+   }
+
+   &__social {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      margin-bottom: 35px;
+   }
+
+   .navigation {
+      margin-bottom: 65px;
+
+      &__items {}
+   }
+
+   .navigation-item {
+      margin-bottom: 30px;
+      position: relative;
+
+      &._active {
+         margin-top: 45px;
+         margin-bottom: 45px;
+
+         a {
+            margin-left: 25px;
+            color: #fff;
+         }
+
+         &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 10px;
+            height: 17px;
+            background: var(--yellow);
+         }
+      }
+   }
+
+   .navigation-link {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.5);
+
+      &:hover {
+         color: #fff;
+      }
+   }
+
+   .social-link {}
+
+   &__banner {
+      width: 202px;
+      height: 160px
+   }
+
+   &__banner-wrapper {
+      border: 1px solid var(--yellow);
+      box-sizing: border-box;
+      border-radius: 20px;
+      background: #ccc;
+      width: 202px;
+      height: 160px
+   }
+
+}
+
+@media screen and (max-width: 991px) {
+   .menu {
+      position: fixed;
+      top: 0;
+      left: -160px;
+      bottom: 0;
+      background-color: #0A0018;
+      padding: 20px 16px;
+      overflow-y: auto;
+      width: 160px;
+      z-index: 3;
+      transition: left 0.3s ease;
+
+      &._active {
+         left: 0;
+      }
+
+      &__header {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .navigation-link {
+         font-size: 14px;
+         line-height: 18.62px;
+      }
+
+      .navigation-item {
+         margin-bottom: 25px;
+
+         &._active {
+            margin-top: 35px;
+            margin-bottom: 35px;
+         }
+      }
+
+      &__price-amount {
+         font-size: 14px;
+         line-height: 18.62px;
+      }
+
+      &__price {
+         gap: 10px;
+         margin-bottom: 25px;
+      }
+
+      &__price-logo {
+         width: 29px;
+         height: 29px;
+      }
+
+      .navigation {
+         margin-bottom: 35px;
+      }
+
+      &__logo {
+         display: flex;
+         align-items: center;
+         gap: 20px;
+         height: 31px;
+
+         img {
+            width: 31px;
+         }
+      }
+
+      .logo__text {
+         font-family: Segoe UI;
+         font-size: 10px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 13px;
+         letter-spacing: 0em;
+         color: #009adc;
+      }
+
+      &__social {
+         gap: 10px;
+      }
+
+      .social-link {
+         width: 20px;
+         height: 20px;
+
+         svg {
+            width: 20px;
+            height: 20px;
+         }
+      }
+
+      &__banner {
+         display: none;
+      }
+   }
+}
+
+//menu
