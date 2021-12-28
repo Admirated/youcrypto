@@ -778,3 +778,11 @@ body {
     border-radius: 5px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .banners__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}

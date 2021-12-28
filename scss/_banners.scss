@@ -63,3 +63,9 @@
       border-radius: 5px;
    }
 }
+
+@media screen and (max-width: 576px) {
+   .banners__wrapper {
+      justify-content: space-between;
+   }
+}
