@@ -62,6 +62,7 @@ select {
 body {
     background: var(--main-color);
     font-family: Segoe UI, sans-serif;
+    min-height: 100vh;
 }
 
 :root {
@@ -109,6 +110,24 @@ body {
     display: flex;
 }
 
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .page__container {
+        padding: 0;
+    }
+
+    .banners__wrapper {
+        padding: 0 16px;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -141,3 +160,6 @@ body {
 @import "_header";
 @import "_menu";
 @import "_banners";
+@import "_desk";
+@import "_footer";
+@import "_datatables";

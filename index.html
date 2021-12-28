@@ -5,6 +5,7 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
    <link rel="stylesheet" href="./css/style.css">
    <title>Youcrypto</title>
 </head>
@@ -173,31 +174,420 @@
             </div>
          </aside>
 
-         <main class="page__content content">
-            <div class="content__banners banners">
-               <div class="banners__wrapper">
-                  <div class="banner-wrapper">
-                     <img src="./assets/img/bigbanner.png" alt="banner">
+         <div class="main__wrapper">
+            <main class="page__content content">
+               <div class="content__banners banners">
+                  <div class="banners__wrapper">
+                     <div class="banner-wrapper">
+                        <img src="./assets/img/bigbanner.png" alt="banner">
+                     </div>
+                  </div>
+                  <div class="banners__wrapper">
+                     <div class="banner-wrapper">
+                        <img src="./assets/img/banner1.png" alt="banner">
+                     </div>
+                     <div class="banner-wrapper">
+                        <img src="./assets/img/banner2.png" alt="banner">
+                     </div>
+                     <div class="banner-wrapper">
+                        <img src="./assets/img/banner3.png" alt="banner">
+                     </div>
                   </div>
                </div>
-               <div class="banners__wrapper">
-                  <div class="banner-wrapper">
-                     <img src="./assets/img/banner1.png" alt="banner">
-                  </div>
-                  <div class="banner-wrapper">
-                     <img src="./assets/img/banner2.png" alt="banner">
-                  </div>
-                  <div class="banner-wrapper">
-                     <img src="./assets/img/banner3.png" alt="banner">
+               <div class="content__desk desk">
+                  <div class="desk__wrapper">
+                     <div class="promoted">
+                        <div class="desk__title">
+                           <p>Promoted:</p>
+                        </div>
+                        <div class="desk__table-wrapper">
+                           <table id="promotedTokens" class="desk__table">
+                              <thead>
+                                 <tr>
+                                    <th name="id">#</th>
+                                    <th name="name">Name</th>
+                                    <th name="chain">Chain</th>
+                                    <th name="symbol">Symbol</th>
+                                    <th name="mCap">Market Cap</th>
+                                    <th name="price">Price</th>
+                                    <th name="launch">Launch</th>
+                                    <th name="votes">Votes</th>
+                                    <th name="voteBtn" class="no-sort"></th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td name="id">3</td>
+                                    <td name="name">
+                                       <div class="table__name-wrapper">
+                                          <img src="./assets/img/tokenICOn.png" alt="">
+                                          BWC
+                                       </div>
+                                    </td>
+                                    <td name="chain">BSC</td>
+                                    <td name="symbol">Dawn Wars</td>
+                                    <td name="mCap">$19792</td>
+                                    <td name="price">$2.1</td>
+                                    <td name="launch">2021-10-01 19:01:56</td>
+                                    <td name="votes">
+                                       <div class="table__votes-wrapper">
+                                          <p>2322323</p>
+                                       </div>
+                                    </td>
+                                    <td name="voteBtn">
+                                       <div class="table__voteBtn-wrapper">
+                                          <p>vote</p>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="default">
+                        <div class="desk__selector selector">
+                           <div class="selector__item _active">
+                              <p>New</p>
+                           </div>
+                           <div class="selector__item">
+                              <p>All Time</p>
+                           </div>
+                           <div class="selector__item">
+                              <p>Today</p>
+                           </div>
+                        </div>
+                        <div class="desk__table-wrapper"></div>
+                     </div>
                   </div>
                </div>
-            </div>
-         </main>
+            </main>
+            <footer class="page__footer footer">
+               <div class="footer__text">
+                  <p>Copyright © 2021, Made By Registered Company Beurop & Handcrafted by iO.<br>
+                     All trademarks and copyrights belong to their respective owners.</p>
+               </div>
+            </footer>
+         </div>
+
       </div>
    </div>
 
    <div class="overflow"></div>
-
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
    <script src="./app.js"></script>
 </body>
 

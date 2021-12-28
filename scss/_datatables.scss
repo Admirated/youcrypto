@@ -1,0 +1,237 @@
+.dataTables_length {
+   display: none;
+}
+
+#promotedTokens_filter {
+   display: none;
+}
+
+#promotedTokens {
+   margin-bottom: 20px;
+}
+
+.desk__title,
+.desk__selector {
+   margin-bottom: 20px;
+}
+
+.dataTables_info {
+   display: none;
+}
+
+.table__voteBtn-wrapper {
+   border-radius: 10px !important;
+   padding: 5px 0;
+   border: 1px solid #009ADC !important;
+   cursor: pointer;
+
+   &:hover {
+      background: #009ADC;
+
+   }
+}
+
+.table__name-wrapper {
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   gap: 10px;
+}
+
+.table__votes-wrapper {
+   background: #009ADC;
+   border-radius: 10px;
+   width: 80px;
+   padding: 5px 5px;
+   margin: 0 auto;
+}
+
+.desk__table-wrapper {
+   background: linear-gradient(180deg, #0A0018 0%, rgba(10, 0, 24, 0) 100%);
+   border: 1px solid rgba(255, 184, 0, 0.2);
+   box-sizing: border-box;
+   box-shadow: inset 0px 9px 34px rgba(255, 255, 255, 0.09);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   border-radius: 10px;
+   padding: 0 10px 20px 10px;
+   margin-bottom: 20px;
+
+   table {
+      border-collapse: collapse;
+   }
+
+   label {
+      color: var(--yellow);
+   }
+
+   th {
+      color: var(--yellow);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 350;
+      line-height: 19px;
+      letter-spacing: 0em;
+   }
+
+   tr {
+      background-color: transparent !important;
+   }
+
+   td {
+      color: #fff;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      &:first-child {
+         color: var(--yellow);
+      }
+   }
+
+   tbody tr {
+      border-bottom: 1px solid rgba(191, 177, 227, 0.3);
+
+      td:nth-child(2) {
+         position: relative;
+      }
+
+      td:first-child {
+         padding-left: 0;
+      }
+   }
+
+   thead tr th {
+      border: none;
+
+      &:first-child {
+         padding-left: 0;
+
+      }
+   }
+
+   .dataTables_wrapper .dataTables_paginate .paginate_button {
+      &:hover {
+         background: transparent;
+         border-color: transparent;
+      }
+   }
+
+   .dataTables_wrapper .dataTables_paginate span .paginate_button {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: 0em;
+      color: #fff !important;
+
+      &:hover {
+         background: #009ADC !important;
+         border-color: #000 !important;
+      }
+
+      &.current {
+         color: #000 !important;
+         background: #fff !important;
+      }
+   }
+
+   span .paginate_button {
+      border-radius: 10px !important;
+      width: 35px !important;
+      height: 35px !important;
+      padding: 5px !important;
+      border: 1px solid #009ADC !important;
+      margin-right: 5px;
+
+      &.current {
+         border-color: #fff !important;
+      }
+   }
+
+   .paginate_button.disabled {
+      svg {
+         path {
+            fill: white !important;
+            fill-opacity: 0.3;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .desk__wrapper {
+      padding: 0;
+   }
+
+   .desk__title {
+      padding: 30px 25px;
+      margin-bottom: 0;
+
+      p {
+         font-size: 14px;
+         font-weight: 600;
+         line-height: 19px;
+      }
+   }
+
+   .desk__selector {
+      padding: 30px 25px;
+      margin-bottom: 30px;
+
+      .selector__item {
+         p {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 19px;
+            padding-bottom: 9px;
+         }
+      }
+
+      &::after {
+         left: 25px;
+      }
+   }
+
+   .desk__table-wrapper {
+      margin: 0 15px;
+
+      td[name="mCap"],
+      th[name="mCap"] {
+         display: none;
+      }
+
+      td[name="price"],
+      th[name="price"] {
+         display: none;
+      }
+
+      td[name="launch"],
+      th[name="launch"] {
+         display: none;
+      }
+
+      td[name="votes"],
+      th[name="votes"] {
+         display: none;
+      }
+
+      td,
+      th {
+         font-size: 10px;
+         font-weight: 400;
+         line-height: 13px;
+      }
+
+      .table__voteBtn-wrapper,
+      .table__votes-wrapper {
+         border-radius: 5px;
+         padding: 6px 10px;
+      }
+   }
+}
