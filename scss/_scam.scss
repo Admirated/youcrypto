@@ -48,7 +48,9 @@
       }
    }
 
-   &__search {}
+   &__search {
+      position: relative;
+   }
 
    &__form-wrapper {
       label {

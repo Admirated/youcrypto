@@ -17,6 +17,7 @@ new Swiper('.banners__slider', {
       }
    },
    autoplay: {
-      delay: 2000
+      delay: 2000,
+      disableOnInteraction: false
    },
 });

@@ -64,6 +64,7 @@ body {
   background: var(--main-color);
   font-family: Segoe UI, sans-serif;
   min-height: 100vh;
+  position: relative;
 }
 
 :root {
@@ -1208,6 +1209,10 @@ body {
   color: var(--yellow);
 }
 
+.scam__search {
+  position: relative;
+}
+
 .scam__form-wrapper label {
   font-size: 18px;
   font-style: normal;
@@ -1471,4 +1476,22 @@ body {
   .scam__textarea textarea {
     height: 180px;
   }
+}
+
+.blick {
+  position: absolute;
+  width: 999.97px;
+  height: 665.62px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(211, 247, 0, 0.0735) 0%, rgba(232, 255, 97, 0.0735) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.top-left-blick {
+  left: -109.19px;
+  top: -335px;
+  -webkit-filter: blur(250px);
+          filter: blur(250px);
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }

@@ -63,6 +63,7 @@ body {
     background: var(--main-color);
     font-family: Segoe UI, sans-serif;
     min-height: 100vh;
+    position: relative;
 }
 
 :root {
@@ -168,3 +169,4 @@ body {
 @import "_footer";
 @import "_datatables";
 @import "_scam";
+@import "_blick";
