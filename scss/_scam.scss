@@ -277,5 +277,11 @@
          width: 139px;
          height: 44px;
       }
+
+      &__textarea {
+         textarea {
+            height: 180px;
+         }
+      }
    }
 }

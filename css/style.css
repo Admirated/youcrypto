@@ -1466,4 +1466,7 @@ body {
     width: 139px;
     height: 44px;
   }
+  .scam__textarea textarea {
+    height: 180px;
+  }
 }
