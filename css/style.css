@@ -90,7 +90,7 @@ body {
   max-width: 1337px;
   width: 100%;
   margin: 0 auto;
-  padding: 0px 16px;
+  padding: 0px 16px 10px 16px;
 }
 
 .overflow {
@@ -128,6 +128,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+  position: relative;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -773,9 +775,23 @@ body {
 }
 
 .banners__wrapper:first-child .banner-wrapper {
-  max-width: 1112px;
+  max-width: 1094px;
   width: 100%;
   height: 162px;
+}
+
+.banners__slider-wrapper {
+  position: relative;
+  height: 130px;
+  width: 100%;
+}
+
+.banners__slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .banner-wrapper {
@@ -786,6 +802,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 20px;
+  margin: 0 auto;
 }
 
 .banner-wrapper img {
@@ -794,18 +811,19 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+  .content__banners {
+    margin-bottom: 10px;
+  }
   .banners__wrapper {
     gap: 5px;
   }
   .banners__wrapper:first-child {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .banners__wrapper:first-child .banner-wrapper {
     height: 71px;
   }
   .banner-wrapper {
-    max-width: calc(100% / 3);
-    height: 59px;
     border-radius: 5px;
   }
 }
@@ -909,11 +927,12 @@ body {
   display: none;
 }
 
-#promotedTokens_filter {
+#promotedTokens_filter,
+#defaultTokens_filter {
   display: none;
 }
 
-#promotedTokens {
+#defaultTokens {
   margin-bottom: 20px;
 }
 
@@ -1096,17 +1115,13 @@ body {
   }
   .desk__selector::after {
     left: 25px;
+    max-width: 90%;
   }
   .desk__table-wrapper {
     margin: 0 15px;
   }
-  .desk__table-wrapper td[name="mCap"],
-  .desk__table-wrapper th[name="mCap"] {
-    display: none;
-  }
-  .desk__table-wrapper td[name="price"],
-  .desk__table-wrapper th[name="price"] {
-    display: none;
+  .desk__table-wrapper table {
+    max-width: 100%;
   }
   .desk__table-wrapper td[name="launch"],
   .desk__table-wrapper th[name="launch"] {
@@ -1126,5 +1141,24 @@ body {
   .desk__table-wrapper .table__votes-wrapper {
     border-radius: 5px;
     padding: 6px 10px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  td[name="mCap"],
+  th[name="mCap"] {
+    display: none;
+  }
+  td[name="price"],
+  th[name="price"] {
+    display: none;
+  }
+  td[name="launch"],
+  th[name="launch"] {
+    display: none;
+  }
+  td[name="votes"],
+  th[name="votes"] {
+    display: none;
   }
 }

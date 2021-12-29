@@ -2,11 +2,13 @@
    display: none;
 }
 
-#promotedTokens_filter {
+#promotedTokens_filter,
+#defaultTokens_filter {
    display: none;
 }
 
-#promotedTokens {
+
+#defaultTokens {
    margin-bottom: 20px;
 }
 
@@ -195,20 +197,15 @@
 
       &::after {
          left: 25px;
+         max-width: 90%;
       }
    }
 
    .desk__table-wrapper {
       margin: 0 15px;
 
-      td[name="mCap"],
-      th[name="mCap"] {
-         display: none;
-      }
-
-      td[name="price"],
-      th[name="price"] {
-         display: none;
+      table {
+         max-width: 100%;
       }
 
       td[name="launch"],
@@ -234,4 +231,28 @@
          padding: 6px 10px;
       }
    }
+}
+
+@media screen and (max-width: 567px) {
+
+   td[name="mCap"],
+   th[name="mCap"] {
+      display: none;
+   }
+
+   td[name="price"],
+   th[name="price"] {
+      display: none;
+   }
+
+   td[name="launch"],
+   th[name="launch"] {
+      display: none;
+   }
+
+   td[name="votes"],
+   th[name="votes"] {
+      display: none;
+   }
+
 }
