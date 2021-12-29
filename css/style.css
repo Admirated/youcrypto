@@ -812,7 +812,7 @@ body {
 
 @media screen and (max-width: 991px) {
   .content__banners {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .banners__wrapper {
     gap: 5px;
@@ -910,6 +910,10 @@ body {
   .desk__selector::after {
     width: 100%;
     min-width: 330px;
+  }
+  .content__desk {
+    border-radius: 10px;
+    padding-bottom: 20px;
   }
 }
 
@@ -1153,12 +1157,313 @@ body {
   th[name="price"] {
     display: none;
   }
-  td[name="launch"],
-  th[name="launch"] {
-    display: none;
+}
+
+.scam__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.scam__header-description {
+  width: calc(50% - 40px);
+}
+
+.scam__header-search {
+  width: calc(50% - 40px);
+}
+
+.scam__title {
+  margin-bottom: 20px;
+}
+
+.scam__title p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.scam__subtitle {
+  margin-bottom: 15px;
+}
+
+.scam__subtitle p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--yellow);
+}
+
+.scam__form-wrapper label {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.scam__fields-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.scam__field {
+  width: calc(50% - 40px);
+}
+
+.scam__chexbox {
+  margin-bottom: 20px;
+}
+
+.scam__chexbox .checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.scam__chexbox .checkbox + label {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.scam__chexbox label {
+  position: relative;
+}
+
+.scam__chexbox .checkbox + label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  margin-right: 0.5em;
+}
+
+.scam__chexbox .checkbox:checked + label::before {
+  border-color: var(--yellow);
+}
+
+.scam__chexbox .checkbox:checked + label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  width: 8px;
+  height: 8px;
+  background: #FFB800;
+  border-radius: 2px;
+}
+
+.scam__textarea {
+  width: 100%;
+}
+
+.scam__textarea textarea {
+  padding: 22px 37px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+  color: var(--yellow);
+}
+
+.scam__textarea textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.scam__textarea textarea:-ms-input-placeholder {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.scam__textarea textarea::-ms-input-placeholder {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.scam__textarea textarea::placeholder {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.scam__textarea textarea:focus {
+  border: 1px solid var(--yellow);
+}
+
+.scam__agree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.scam__agree-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.scam__captcha-wrapper {
+  width: 251px;
+  height: 80px;
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.scam__submit {
+  background: #FFB800;
+  border-radius: 10px;
+  padding: 28px 120px;
+}
+
+.scam__submit a {
+  position: relative;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #000;
+}
+
+.scam__submit a:after {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  right: -45px;
+  width: 36px;
+  height: 8px;
+  background: url("../assets/img/Arrow.png") no-repeat center top/contain;
+}
+
+.desk__text p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .scam__header-description, .scam__header-search {
+    width: 100%;
+    margin: 0 auto;
   }
-  td[name="votes"],
-  th[name="votes"] {
-    display: none;
+  .scam .desk__title {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .scam__container {
+    padding: 16px;
+  }
+  .scam__field {
+    width: 100%;
+  }
+  .scam__agree {
+    gap: 0px;
+  }
+  .scam__agree-btns {
+    gap: 10px;
+  }
+  .scam__submit {
+    padding: 8.5px 35px;
+  }
+  .scam__submit a {
+    font-size: 10px;
+    line-height: 26.3px;
+  }
+  .scam__submit a:after {
+    right: -20px;
+    width: 15px;
+    top: 6px;
+    background: url("../assets/img/Arrow.png") no-repeat center top/contain;
+  }
+  .scam__captcha-wrapper {
+    width: 139px;
+    height: 44px;
   }
 }
