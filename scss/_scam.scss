@@ -258,16 +258,16 @@
       }
 
       &__submit {
-         padding: 8.5px 35px;
+         padding: 9px 35px;
 
          a {
-            font-size: 10px;
+            font-size: 13px;
             line-height: 26.3px;
 
             &:after {
                right: -20px;
                width: 15px;
-               top: 6px;
+               top: 9px;
                background: url('../assets/img/Arrow.png') no-repeat center top/contain;
             }
          }
