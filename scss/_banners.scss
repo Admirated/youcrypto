@@ -89,10 +89,16 @@
             }
          }
       }
+
+      &__slider-wrapper {
+         height: 83px;
+      }
    }
 
    .banner-wrapper {
       border-radius: 5px;
+      max-width: 150px;
+      height: 83px;
    }
 }
 

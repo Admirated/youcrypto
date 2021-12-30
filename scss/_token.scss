@@ -1,0 +1,314 @@
+.token {
+
+   &__info {
+      margin-bottom: 30px;
+   }
+
+   &__description {
+      max-width: 780px;
+   }
+
+   &__info-wrapper {
+      padding-left: 109px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+   }
+
+   &__info-data-wrapper {
+      width: 209px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+   }
+
+   &__info-data {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__info-btns-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 15px;
+   }
+
+   &__info-vote-btns {
+      display: flex;
+      gap: 10px;
+   }
+
+   &__info-vote-btn {
+      min-width: 54px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      span {
+         height: 43px;
+         padding: 11px 12px;
+         border: 1px solid #009ADC;
+         background: #009ADC;
+         border-radius: 5px;
+      }
+
+      &:last-child {
+         span {
+            border: 1px solid #009ADC;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: transparent;
+         }
+      }
+
+      span,
+      p {
+         color: #fff;
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 19px;
+      }
+
+      p {
+         font-weight: 350;
+      }
+   }
+
+   &__info-contract {}
+
+   &__info-contract-wrapper {
+      background: #0A0018;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      border-radius: 5px;
+      height: 43px;
+      padding: 8px 12px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      p {
+         font-size: 13px;
+         font-weight: 350;
+         line-height: 13px;
+         letter-spacing: 0em;
+         color: #FFFFFF80;
+      }
+   }
+
+   &__info-nav-btns {
+      display: flex;
+      gap: 10px;
+   }
+
+   &__info-nav-btn {
+      height: 43px;
+      width: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0A0018;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+         background-color: var(--main-color);
+      }
+   }
+
+}
+
+.data {
+
+   &__title {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 19px;
+      letter-spacing: 0em;
+      color: var(--yellow);
+   }
+
+   &__value {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0em;
+      color: #fff;
+   }
+}
+
+.copy__btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+
+.about {
+   &__transactions {
+      margin-bottom: 50px;
+   }
+
+   .transactions {
+
+      &__wrapper {
+         border: 1px solid rgba(255, 255, 255, 0.3);
+         box-sizing: border-box;
+         border-radius: 10px;
+         width: 100%;
+         padding: 10px 50px;
+
+         table {
+            width: 100%;
+            border-spacing: 0 15px;
+            text-align: center;
+         }
+
+         th {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+         }
+
+
+         td {
+
+            p,
+            a {
+               font-size: 14px;
+               font-weight: 400;
+               line-height: 19px;
+               color: var(--yellow);
+
+            }
+         }
+
+         tbody td {
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 991px) {
+   .data {
+      &__title {
+         font-size: 13px;
+         line-height: 13px;
+      }
+
+      &__value {
+         font-size: 13px;
+         line-height: 13px;
+      }
+   }
+
+   .token {
+
+      &__description {
+         p:last-child {
+            margin-bottom: 0 !important;
+         }
+      }
+
+      &__info-wrapper {
+         flex-wrap: wrap;
+         padding: 0;
+      }
+
+      &__info-data-wrapper {
+         width: 100%;
+         flex-flow: row wrap;
+         margin-bottom: 20px;
+      }
+
+      &__info-data {
+         width: 45%;
+      }
+
+      &__info-btns-wrapper {
+         flex-wrap: wrap;
+         justify-content: flex-start;
+      }
+
+      &__info-vote-btns {
+         order: 2;
+      }
+
+      &__info-vote-btn {
+         p {
+            font-size: 12px;
+            line-height: 13px;
+         }
+
+         span {
+            height: 34px;
+            padding: 6px 12px;
+         }
+      }
+
+      &__info-nav-btn {
+         height: 34px;
+      }
+
+      &__contract-wrapper {
+         order: 1;
+      }
+
+      &__info-nav-btns {
+         order: 3;
+      }
+   }
+
+   .about {
+      &__transactions {
+         margin-bottom: 50px;
+      }
+
+      .transactions {
+
+         &__wrapper {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-sizing: border-box;
+            border-radius: 10px;
+            width: 100%;
+            padding: 10px 20px;
+
+            table {
+               width: 100%;
+               border-spacing: 0 15px;
+               text-align: center;
+            }
+
+            th {
+               font-size: 13px;
+               line-height: 13px;
+            }
+
+
+            td {
+
+               p,
+               a {
+                  font-size: 12px;
+                  line-height: 13px;
+               }
+            }
+
+            tbody td {
+               padding-top: 15px;
+               border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+            }
+         }
+      }
+   }
+}
