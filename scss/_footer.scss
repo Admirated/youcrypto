@@ -4,6 +4,9 @@
 }
 
 .footer {
+   &__mobile {
+      display: none;
+   }
 
    &__text {
       p {
@@ -14,6 +17,18 @@
          letter-spacing: 0em;
          text-align: center;
          color: #FFFFFF80;
+      }
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .footer {
+      &__mobile {
+         display: block;
+      }
+
+      &__desktop {
+         display: none;
       }
    }
 }

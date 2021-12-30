@@ -131,6 +131,10 @@ body {
     .banners__wrapper {
         padding: 0 16px;
     }
+
+    .main__wrapper {
+        gap: 10px;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -169,4 +173,4 @@ body {
 @import "_footer";
 @import "_datatables";
 @import "_scam";
-@import "_blick";
+@import "_about";
