@@ -731,6 +731,7 @@ body {
             align-items: center;
     gap: 20px;
     height: 31px;
+    margin-bottom: 20px;
   }
   .menu__logo img {
     width: 31px;
