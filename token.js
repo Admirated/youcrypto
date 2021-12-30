@@ -18,10 +18,15 @@ window.addEventListener('DOMContentLoaded', () => {
       navigator.clipboard.write(data).then(
          function () {
             copyBtn.querySelector('svg path').style.fill = "#00e23f";
+            setTimeout(() => {
+               copyBtn.querySelector('svg path').style.fill = "#ffb800";
+            }, 2000);
          },
          function () {
             copyBtn.querySelector('svg path').style.fill = "#e61b1b";
-
+            setTimeout(() => {
+               copyBtn.querySelector('svg path').style.fill = "#ffb800";
+            }, 2000);
          }
       );
    }
