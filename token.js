@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
    const copyBtn = document.querySelector('.copy__btn');
 
    copyBtn.addEventListener('click', () => {
-      const address = document.querySelector('.token__info-contract-wrapper p').textContent;
+      const address = document.querySelector('#contract').textContent;
       setClipboard(address);
    });
 
