@@ -56,4 +56,18 @@ window.addEventListener('DOMContentLoaded', () => {
    function addActiveClass(...elements) {
       elements.forEach(el => el.classList.add('_active'));
    }
+
+   //inputs 
+   const inputs = document.querySelectorAll('.input__field input');
+   if (inputs.length) {
+      inputs.forEach(input => {
+         input.addEventListener('focus', () => {
+            input.closest('.input__wrapper').querySelector('.input__label p').style.color = '#ffb800';
+         });
+         input.addEventListener('blur', () => {
+            input.closest('.input__wrapper').querySelector('.input__label p').style.color = '#fff';
+
+         });
+      });
+   }
 });

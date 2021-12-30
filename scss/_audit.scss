@@ -1,0 +1,184 @@
+.audit {
+
+   &__container {}
+
+   &__cards-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 55px;
+      padding-top: 20px;
+      flex-wrap: wrap;
+
+   }
+
+   &__card {
+      width: 280px;
+      height: 360px;
+      padding: 32px 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      background: #10041F;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      border-radius: 20px;
+      text-align: center;
+      color: #fff;
+   }
+
+
+   &__form-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 55px;
+   }
+
+
+   .scam__agree-btns {
+      justify-content: flex-start;
+   }
+
+}
+
+.card {
+
+   &__image {}
+
+   &__title {
+      p {
+         font-size: 18px;
+         font-weight: 600;
+         line-height: 24px;
+      }
+   }
+
+   &__text {
+      p {
+         font-size: 14px;
+         font-weight: 350;
+         line-height: 19px;
+      }
+   }
+}
+
+.input {
+
+   &__wrapper {
+      width: calc(50% - 12.5px);
+   }
+
+   &__label {
+      p {
+         font-size: 18px;
+         font-weight: 400;
+         line-height: 24px;
+         letter-spacing: 0em;
+         color: #fff;
+      }
+
+      margin-bottom: 20px;
+   }
+
+   &__field {
+
+      input {
+         width: 100%;
+         background: #0A0018;
+         border: 1px solid rgba(255, 255, 255, 0.3);
+         box-sizing: border-box;
+         border-radius: 10px;
+         padding: 18px 20px;
+         color: var(--yellow);
+         outline: none;
+
+         &::placeholder {
+            font-size: 14px;
+            font-weight: 350;
+            line-height: 19px;
+            letter-spacing: 0em;
+            color: #FFFFFF80;
+         }
+
+         &:focus {
+            border: 1px solid var(--yellow);
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 420px) {
+   .audit {
+      &__cards-wrapper {
+         flex-wrap: wrap;
+      }
+
+      &__card {
+         width: 228px;
+         height: 290px;
+         padding: 32px 26px;
+
+      }
+
+      .card__text {
+         p {
+            font-size: 13px;
+            line-height: 17px;
+         }
+      }
+
+      .card__title {
+         p {
+            line-height: 16.7px;
+            font-size: 15px;
+         }
+      }
+
+      .card__image {
+         width: 50px;
+      }
+
+      .desk__title {
+         p {
+            text-align: center;
+            font-size: 18px;
+         }
+      }
+
+      &__form-container {
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         gap: 15px;
+         margin-bottom: 35px;
+      }
+
+      .input__wrapper {
+         width: calc(100% - 25px);
+      }
+
+      .scam__agree-btns {
+         justify-content: center;
+      }
+
+      .input__label {
+         margin-bottom: 10px;
+
+         p {
+
+            font-size: 14px;
+         }
+      }
+
+      .input__field {
+         input {
+            padding: 10px 12px;
+            font-size: 14px;
+         }
+      }
+   }
+}
