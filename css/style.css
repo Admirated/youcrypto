@@ -1765,6 +1765,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .about__header {
+    gap: 25px;
+  }
   .about__container {
     padding: 0 16px;
   }

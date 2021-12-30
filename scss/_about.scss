@@ -221,6 +221,10 @@
 
 @media screen and (max-width: 768px) {
    .about {
+      &__header {
+         gap: 25px;
+      }
+
       &__container {
          padding: 0 16px;
       }
