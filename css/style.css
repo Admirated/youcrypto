@@ -1436,13 +1436,23 @@ body {
 }
 
 .scam__submit {
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
   background: #FFB800;
   border-radius: 10px;
   padding: 28px 120px;
+  position: relative;
+  cursor: pointer;
 }
 
-.scam__submit a {
-  position: relative;
+.scam__submit:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.scam__submit p {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1451,11 +1461,14 @@ body {
   color: #000;
 }
 
-.scam__submit a:after {
+.scam__submit p:after {
   content: "";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 5px;
   position: absolute;
-  top: 0.5em;
-  right: -45px;
+  top: calc(50% - 1px);
   width: 36px;
   height: 8px;
   background: url("../assets/img/Arrow.png") no-repeat center top/contain;
@@ -1486,7 +1499,7 @@ body {
     width: 100%;
   }
   .scam__agree {
-    gap: 0px;
+    gap: 10px;
   }
   .scam__agree-btns {
     gap: 10px;
@@ -1494,14 +1507,13 @@ body {
   .scam__submit {
     padding: 9px 35px;
   }
-  .scam__submit a {
+  .scam__submit p {
     font-size: 13px;
     line-height: 26.3px;
   }
-  .scam__submit a:after {
-    right: -20px;
+  .scam__submit p:after {
     width: 15px;
-    top: 9px;
+    top: 50%;
     background: url("../assets/img/Arrow.png") no-repeat center top/contain;
   }
   .scam__captcha-wrapper {
@@ -2157,6 +2169,19 @@ body {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .token__info-contract {
+    width: 100%;
+  }
+  .token__info-wrapper {
+    width: 100%;
+  }
+  .token__info-contract-wrapper p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .audit__cards-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2245,7 +2270,8 @@ body {
   color: #fff;
 }
 
-.input__field input {
+.input__field input,
+.input__field select {
   width: 100%;
   background: #0A0018;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -2257,7 +2283,8 @@ body {
   outline: none;
 }
 
-.input__field input::-webkit-input-placeholder {
+.input__field input::-webkit-input-placeholder,
+.input__field select::-webkit-input-placeholder {
   font-size: 14px;
   font-weight: 350;
   line-height: 19px;
@@ -2265,7 +2292,8 @@ body {
   color: #FFFFFF80;
 }
 
-.input__field input:-ms-input-placeholder {
+.input__field input:-ms-input-placeholder,
+.input__field select:-ms-input-placeholder {
   font-size: 14px;
   font-weight: 350;
   line-height: 19px;
@@ -2273,7 +2301,8 @@ body {
   color: #FFFFFF80;
 }
 
-.input__field input::-ms-input-placeholder {
+.input__field input::-ms-input-placeholder,
+.input__field select::-ms-input-placeholder {
   font-size: 14px;
   font-weight: 350;
   line-height: 19px;
@@ -2281,7 +2310,8 @@ body {
   color: #FFFFFF80;
 }
 
-.input__field input::placeholder {
+.input__field input::placeholder,
+.input__field select::placeholder {
   font-size: 14px;
   font-weight: 350;
   line-height: 19px;
@@ -2289,8 +2319,27 @@ body {
   color: #FFFFFF80;
 }
 
-.input__field input:focus {
+.input__field input:focus,
+.input__field select:focus {
   border: 1px solid var(--yellow);
+}
+
+@media screen and (max-width: 768px) {
+  .audit__form-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+  .audit .scam__agree-btns {
+    padding: 0 5px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -2348,4 +2397,118 @@ body {
     padding: 10px 12px;
     font-size: 14px;
   }
+}
+
+.promotion__inputs-wrapper {
+  width: calc(50% - 12.5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advertise .scam__agree-btns {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.advertise__form-wrapper {
+  margin-bottom: 55px;
+}
+
+.advertise__title {
+  margin-bottom: 55px;
+}
+
+.advertise__title p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+.advertise__placement-wrapper:not(:last-child) {
+  position: relative;
+  background: #ccc;
+  height: 181px;
+  border: 1px solid #ffffff80;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  width: calc(50% - 12.5px);
+}
+
+.advertise__placement-wrapper:not(:last-child) input {
+  visibility: hidden;
+}
+
+.advertise__placement-wrapper:not(:last-child)._active {
+  border-color: var(--yellow);
+}
+
+.advertise__placement-wrapper:not(:last-child) img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.advertise__placement-wrapper:last-child {
+  width: calc(50% - 12.5px);
+}
+
+.advertise__placement-wrapper:last-child .promotion__inputs-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.advertise__placement-wrapper:last-child .input__wrapper {
+  width: calc(50% - 7.5px);
+}
+
+.advertise__placement-wrapper:last-child .scam__agree-btns {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+
+.advertise__placement-wrapper:last-child .scam__captcha {
+  width: calc(50% - 7.5px);
+}
+
+.advertise__placement-wrapper:last-child .scam__captcha-wrapper {
+  width: 100%;
+  height: 55px;
+}
+
+.advertise__placement-wrapper:last-child .scam__submit {
+  width: calc(50% - 7.5px);
+  height: 55px;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+input[type="file"] {
+  color: #ffffff80;
+  text-align: right;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  background: url("../assets/svg/upload.svg") no-repeat center left/contain;
+  outline: none;
+  border: none;
+  color: transparent;
+  width: 36px;
 }

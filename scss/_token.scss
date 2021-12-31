@@ -312,3 +312,23 @@
       }
    }
 }
+
+@media screen and (max-width: 420px) {
+   .token {
+      &__info-contract {
+         width: 100%;
+      }
+
+      &__info-wrapper {
+         width: 100%;
+      }
+
+      &__info-contract-wrapper {
+
+         p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+         }
+      }
+   }
+}

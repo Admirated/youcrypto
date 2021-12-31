@@ -1,5 +1,10 @@
+import {
+   addActiveClass,
+   removeActiveClass
+} from './modules/classHelpers.js';
+
 window.addEventListener('DOMContentLoaded', () => {
-   //menu
+   //menu 
    const burger = document.querySelector('.menu__icon'),
       menu = document.querySelector('.menu'),
       menuClose = document.querySelector('.menu__close'),
@@ -49,13 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
       responsive: true
    });
 
-   function removeActiveClass(...elements) {
-      elements.forEach(el => el.classList.remove('_active'));
-   }
 
-   function addActiveClass(...elements) {
-      elements.forEach(el => el.classList.add('_active'));
-   }
 
    //inputs 
    const inputs = document.querySelectorAll('.input__field input');
@@ -70,4 +69,5 @@ window.addEventListener('DOMContentLoaded', () => {
          });
       });
    }
+
 });

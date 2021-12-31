@@ -86,7 +86,8 @@
 
    &__field {
 
-      input {
+      input,
+      select {
          width: 100%;
          background: #0A0018;
          border: 1px solid rgba(255, 255, 255, 0.3);
@@ -107,6 +108,22 @@
          &:focus {
             border: 1px solid var(--yellow);
          }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .audit {
+      &__form-container {
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         gap: 15px;
+         margin-bottom: 35px;
+      }
+
+      .scam__agree-btns {
+         padding: 0 5px;
       }
    }
 }

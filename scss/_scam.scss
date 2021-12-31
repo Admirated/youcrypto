@@ -183,12 +183,19 @@
    }
 
    &__submit {
+      transition: transform 0.2s ease-in;
+
+      &:hover {
+         transform: scale(0.95);
+      }
+
       background: #FFB800;
       border-radius: 10px;
       padding: 28px 120px;
+      position: relative;
+      cursor: pointer;
 
-      a {
-         position: relative;
+      p {
          font-size: 18px;
          font-style: normal;
          font-weight: 600;
@@ -198,9 +205,10 @@
 
          &:after {
             content: "";
+            display: inline-flex;
+            margin-left: 5px;
             position: absolute;
-            top: 0.5em;
-            right: -45px;
+            top: calc(50% - 1px);
             width: 36px;
             height: 8px;
             background: url('../assets/img/Arrow.png') no-repeat center top/contain;
@@ -254,7 +262,7 @@
       }
 
       &__agree {
-         gap: 0px;
+         gap: 10px;
       }
 
       &__agree-btns {
@@ -264,14 +272,13 @@
       &__submit {
          padding: 9px 35px;
 
-         a {
+         p {
             font-size: 13px;
             line-height: 26.3px;
 
             &:after {
-               right: -20px;
                width: 15px;
-               top: 9px;
+               top: 50%;
                background: url('../assets/img/Arrow.png') no-repeat center top/contain;
             }
          }

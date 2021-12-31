@@ -110,9 +110,9 @@
                      <li class="navigation-item"><a href="#" class="navigation-link">Main</a></li>
                      <li class="navigation-item"><a href="#" class="navigation-link">DeFi Crypto Exchange</a></li>
                      <li class="navigation-item"><a href="#" class="navigation-link">Buy Crypto / Visa</a></li>
-                     <li class="navigation-item _active"><a href="#" class="navigation-link">Report scam</a></li>
+                     <li class="navigation-item"><a href="#" class="navigation-link">Report scam</a></li>
                      <li class="navigation-item"><a href="#" class="navigation-link">About</a></li>
-                     <li class="navigation-item"><a href="#" class="navigation-link">Advertise token</a></li>
+                     <li class="navigation-item _active"><a href="#" class="navigation-link">Advertise token</a></li>
                      <li class="navigation-item"><a href="#" class="navigation-link">Advertise Banner</a></li>
                      <li class="navigation-item"><a href="#" class="navigation-link">Price Bot</a></li>
                      <li class="navigation-item"><a href="#" class="navigation-link">Trade (soon)</a></li>
@@ -207,94 +207,79 @@
                </div>
                <div class="content__desk desk">
                   <div class="desk__wrapper">
-                     <div class="audit__container audit">
+                     <div class="advertise__container advertise">
                         <div class="desk__title">
-                           <p>Audit Services</p>
+                           <p>Advertise Token</p>
                         </div>
-                        <div class="audit__cards-wrapper">
-                           <div class="audit__card card">
-                              <div class="card__image">
-                                 <img src="./assets/img/auditCard1.png" alt="card icon">
-                              </div>
-                              <div class="card__title">
-                                 <p>User-Friendly Audits</p>
-                              </div>
-                              <div class="card__text">
-                                 <p>Our stylish and easy-to-read project
-                                    audits review the code, team, website
-                                    and social media and come with
-                                    a promotional NFT you can
-                                    share with your community.</p>
-                              </div>
-                           </div>
-                           <div class="audit__card card">
-                              <div class="card__image">
-                                 <img src="./assets/img/auditCard2.png" alt="card icon">
-                              </div>
-                              <div class="card__title">
-                                 <p>Private Doxxing
-                                    (KYC)</p>
-                              </div>
-                              <div class="card__text">
-                                 <p>Know Your Customer (KYC) standards
-                                    are designed to protect the crypto
-                                    industry against fraud, corruption,
-                                    money laundering and terrorist financing.</p>
-                              </div>
-                           </div>
-                           <div class="audit__card card">
-                              <div class="card__image">
-                                 <img src="./assets/img/auditCard3.png" alt="card icon">
-                              </div>
-                              <div class="card__title">
-                                 <p>Token Launch
-                                    Consulting</p>
-                              </div>
-                              <div class="card__text">
-                                 <p>Have an idea for a project and can't
-                                    figure out how to launch it or market it?
-                                    Our experts will guide you through
-                                    the entire process from idea to success!</p>
-                              </div>
-                           </div>
+                        <div class="advertise__title">
+                           <p>Promoted Coins - 0.3 bnb/day</p>
                         </div>
-                        <div class="audit__form-wrapper">
-                           <form id="audit">
+                        <div class="advertise__form-wrapper">
+                           <form id="advertiseToken">
                               <div class="audit__form-container">
                                  <div class="input__wrapper input">
                                     <div class="input__label">
                                        <p>Token</p>
                                     </div>
                                     <div class="input__field">
-                                       <input type="text" placeholder="0xbf0cf158e84ebacca1b7746e794d507073e5adfe
+                                       <input type="text" name="token" placeholder="0xbf0cf158e84ebacca1b7746e794d507073e5adfe
                                        ">
                                     </div>
                                  </div>
                                  <div class="input__wrapper input">
                                     <div class="input__label">
-                                       <p>Email</p>
+                                       <p>Contact</p>
                                     </div>
                                     <div class="input__field">
-                                       <input type="email" placeholder="info@beurop.com
+                                       <input type="text" name="contact" placeholder="Phone/Email">
+                                    </div>
+                                 </div>
+                                 <div class="input__wrapper input">
+                                    <div class="input__label">
+                                       <p>Token name</p>
+                                    </div>
+                                    <div class="input__field">
+                                       <input type="text" name="tokenName" placeholder="BEUROP
                                     ">
                                     </div>
                                  </div>
                                  <div class="input__wrapper input">
                                     <div class="input__label">
-                                       <p>Name</p>
+                                       <p>Chain</p>
                                     </div>
                                     <div class="input__field">
-                                       <input type="text" placeholder="BEUROP
-                                    ">
+                                       <input type="text" name="chain" placeholder="BSC">
                                     </div>
                                  </div>
                                  <div class="input__wrapper input">
                                     <div class="input__label">
-                                       <p>Telegram</p>
+                                       <p>Symbol</p>
                                     </div>
                                     <div class="input__field">
-                                       <input type="text" placeholder="t.me/nftloa
-                                    ">
+                                       <input type="text" name="symbol" placeholder="BEPR">
+                                    </div>
+                                 </div>
+                                 <div class="promotion__inputs-wrapper">
+                                    <div class="input__wrapper input">
+                                       <div class="input__label">
+                                          <p>Start of the Promotion</p>
+                                       </div>
+                                       <div class="input__field">
+                                          <input type="text" name="start" id="start" placeholder="mm/dd/yyyy">
+                                       </div>
+                                    </div>
+                                    <div class="input__wrapper input">
+                                       <div class="input__label">
+                                          <p>Number of days promoted</p>
+                                       </div>
+                                       <div class="input__field">
+                                          <select name="days">
+                                             <option value="1" selected>1 days</option>
+                                             <option value="1">7 days</option>
+                                             <option value="1">30 days</option>
+                                             <option value="1">180 days</option>
+                                          </select>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
@@ -302,10 +287,107 @@
                                  <div class="scam__captcha">
                                     <div class="scam__captcha-wrapper">Capcha</div>
                                  </div>
-                                 <div class="scam__submit">
-                                    <p>Send</p>
+                                 <div class="ubmit">
+                                    <p>Approve</p>
                                  </div>
                               </div>
+                           </form>
+                        </div>
+
+                        <div class="desk__title">
+                           <p>Advertise Banner</p>
+                        </div>
+                        <div class="advertise__title">
+                           <p>Pay with BEPR with 50% discount</p>
+                        </div>
+                        <div class="advertise__form-wrapper">
+                           <form id="advertiseBanners">
+                              <div class="audit__form-container">
+                                 <div class="input__wrapper input">
+                                    <div class="input__label">
+                                       <p>Link</p>
+                                    </div>
+                                    <div class="input__field">
+                                       <input type="text" name="bannerToken" placeholder="https://google.com">
+                                    </div>
+                                 </div>
+                                 <div class="promotion__inputs-wrapper">
+                                    <div class="input__wrapper input">
+                                       <div class="input__label">
+                                          <p>Contact</p>
+                                       </div>
+                                       <div class="input__field">
+                                          <input type="text" name="bannerContact" placeholder="Phone/Email">
+                                       </div>
+                                    </div>
+                                    <div class="input__wrapper input">
+                                       <div class="input__label">
+                                          <p>Image</p>
+                                       </div>
+                                       <div class="input__field">
+                                          <input type="file" name="bannerImage" id="bannerImage" placeholder="BEUROP
+                                       ">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="input__label">
+                                 <p>Select Page:</p>
+                              </div>
+                              <div class="audit__form-container">
+                                 <div class="advertise__placement-wrapper _active">
+                                    <input type="radio" name="placement" id="placement1" value="1" selected>
+                                    <label for="placement1">
+                                       <img src="./assets/img/placement1.png" alt="carousel">
+                                    </label>
+                                 </div>
+                                 <div class="advertise__placement-wrapper">
+                                    <input type="radio" name="placement" id="placement2" value="2">
+                                    <label for="placement2">
+                                       <img src="./assets/img/placement2.png" alt="highlight">
+                                    </label>
+                                 </div>
+                                 <div class="advertise__placement-wrapper">
+                                    <input type="radio" name="placement" id="placement3" value="3">
+                                    <label for="placement3">
+                                       <img src="./assets/img/placement3.png" alt="menu side">
+                                    </label>
+                                 </div>
+                                 <div class="advertise__placement-wrapper">
+                                    <div class="promotion__inputs-wrapper">
+                                       <div class="input__wrapper input">
+                                          <div class="input__label">
+                                             <p>Start of the Promotion</p>
+                                          </div>
+                                          <div class="input__field">
+                                             <input type="text" name="start" id="startBanner" placeholder="mm/dd/yyyy">
+                                          </div>
+                                       </div>
+                                       <div class="input__wrapper input">
+                                          <div class="input__label">
+                                             <p>Number of days promoted</p>
+                                          </div>
+                                          <div class="input__field">
+                                             <select name="days">
+                                                <option value="1" selected>1 days</option>
+                                                <option value="1">7 days</option>
+                                                <option value="1">30 days</option>
+                                                <option value="1">180 days</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="scam__agree-btns">
+                                       <div class="scam__captcha">
+                                          <div class="scam__captcha-wrapper">Capcha</div>
+                                       </div>
+                                       <div class="scam__submit">
+                                          <p>Approve</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
                            </form>
                         </div>
                      </div>
@@ -338,7 +420,8 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
    <script type="module" src="./swiper.js"></script>
-   <script src="./app.js"></script>
+   <script type="module" src="./app.js"></script>
+   <script type="module" src="./advertise.js"></script>
 </body>
 
 </html>
