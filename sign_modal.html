@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="dialog sign__dialog sign">
+      <div class="dialog__wrapper sign__wrapper">
+         <div class="dialog__close">
+            <span></span>
+         </div>
+         <div class="sign__changer">
+            <div class="sign__up _active">
+               <span>Sign up</span>
+            </div>
+            <div class="sign__in">
+               <span>Sign in</span>
+            </div>
+         </div>
+         <div class="sign__social-wrapper">
+            <div class="sign__social">
+               <a href="">
+                  <div class="sign__social-btn">
+                     <span>Sign in with Gmail</span>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="sign__form">
+            <form id="signUp" class="">
+               <div class="sign__inputs-wrapper">
+                  <div class="sign__input">
+                     <input type="email" name="email" placeholder="E-mail">
+                  </div>
+                  <div class="sign__input">
+                     <input type="password" name="password" placeholder="Password">
+                  </div>
+                  <div class="sign__input">
+                     <input type="text" name="firstname" placeholder="First name">
+                  </div>
+                  <div class="sign__input">
+                     <input type="password" name="email" placeholder="Repassword">
+                  </div>
+                  <div class="sign__input">
+                     <input type="text" name="lastname" placeholder="Last name">
+                  </div>
+                  <div class="sign__input">
+                     <div class="sign__capcha"></div>
+                  </div>
+               </div>
+               <div class="sign__submit">
+                  <div class="scam__submit">
+                     <p>Sign in</p>
+                  </div>
+               </div>
+            </form>
+            <form id="signIn" class="hide">
+               <div class="sign__inputs-wrapper">
+                  <div class="sign__input">
+                     <input type="email" name="email" placeholder="E-mail">
+                  </div>
+                  <div class="sign__input">
+                     <input type="password" name="password" placeholder="Password">
+                  </div>
+               </div>
+               <div class="sign__submit">
+
+                  <div class="sign__input">
+                     <div class="sign__capcha"></div>
+                  </div>
+                  <div class="scam__submit">
+                     <p>Sign up</p>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <script type="module" src="./signModal.js"></script>
+
+</body>
+
+</html>

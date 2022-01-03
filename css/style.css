@@ -2465,6 +2465,7 @@ body {
 }
 
 .advertise__placement-wrapper:not(:last-child) img {
+  border-radius: 20px;
   cursor: pointer;
   width: 100%;
   height: 100%;
@@ -2586,4 +2587,213 @@ input[type="file"]::file-selector-button {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .advertise__placement-wrapper:not(:last-child) {
+    min-width: 320px;
+    width: 100%;
+    height: 120px;
+  }
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 200px;
+  background: rgba(11, 0, 30, 0.8);
+  -webkit-backdrop-filter: blur(22px);
+          backdrop-filter: blur(22px);
+  z-index: 9998;
+}
+
+.dialog__wrapper {
+  position: relative;
+  background: #0A0018;
+  border: 1px solid var(--yellow);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  padding: 26px;
+}
+
+.dialog__close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.dialog__close span {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.dialog__close span::before, .dialog__close span::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background: var(--yellow);
+}
+
+.dialog__close span::before {
+  -webkit-transform: rotate(45.5deg);
+          transform: rotate(45.5deg);
+}
+
+.dialog__close span::after {
+  -webkit-transform: rotate(-45.5deg);
+          transform: rotate(-45.5deg);
+}
+
+.sign__wrapper {
+  width: 460px;
+}
+
+.sign__changer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.sign__changer span {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #FFFFFF80;
+}
+
+.sign__up, .sign__in {
+  cursor: pointer;
+}
+
+.sign__up._active span, .sign__in._active span {
+  color: var(--yellow);
+}
+
+.sign__social-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.sign__social-btn {
+  border: 1px solid #FFB800;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  padding: 18px 0;
+}
+
+.sign__social-btn span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+.sign__social-btn:hover span {
+  color: var(--yellow);
+}
+
+.sign__capcha {
+  background: #ccc;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.sign__submit {
+  padding-top: 25px;
+  width: 227px;
+  margin: 0 auto;
+  height: 85px;
+  text-align: center;
+}
+
+.sign__submit .scam__submit {
+  padding: 18px;
+}
+
+.sign__inputs-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sign__input {
+  width: calc(50% - 4px);
+}
+
+.sign__input input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+  padding: 18px 15px;
+  background: none;
+  outline: none;
+  color: var(--yellow);
+}
+
+.sign__input input:focus {
+  border-color: var(--yellow);
+}
+
+.sign__input input:-webkit-autofill,
+.sign__input input:-webkit-autofill:hover,
+.sign__input input:-webkit-autofill:focus,
+.sign__input input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #0A0018 inset !important;
+  -webkit-text-fill-color: var(--yellow) !important;
+}
+
+.sign #signIn .sign__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+}
+
+.sign #signIn .scam__submit {
+  width: calc(50% - 4px);
 }
