@@ -10,6 +10,11 @@
 
 .menu {
 
+   &__navigation {
+      position: sticky;
+      top: 30px;
+   }
+
    &__header {
       display: none;
    }

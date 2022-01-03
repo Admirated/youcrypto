@@ -3,6 +3,10 @@
    display: flex;
    gap: 15px;
    justify-content: space-between;
+
+   p {
+      white-space: nowrap;
+   }
 }
 
 .advertise {
@@ -27,7 +31,10 @@
       }
    }
 
+
    &__placement-wrapper:not(:last-child) {
+      min-width: 420px;
+
       input {
          visibility: hidden;
       }
@@ -104,5 +111,93 @@ input[type="file"] {
       border: none;
       color: transparent;
       width: 36px;
+   }
+}
+
+@media screen and (max-width: 1170px) {
+   .promotion__inputs-wrapper {
+      width: 100%;
+   }
+
+   .advertise {
+
+      .audit__form-container:last-child {
+         justify-content: center;
+      }
+
+      &__title {
+         padding: 0 10px;
+      }
+
+      &__placement-wrapper:last-child {
+         width: 100%;
+      }
+
+      .scam__agree-btns {
+         width: 49% !important;
+      }
+
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+
+   .advertise {
+
+      .scam__agree-btns {
+         width: 100% !important;
+      }
+
+   }
+
+   #advertiseToken {
+      .scam__agree-btns {
+         padding: 0 10px;
+      }
+   }
+
+   .select-page {
+      padding: 0 10px;
+   }
+
+}
+
+@media screen and (max-width: 568px) {
+   .advertise__title {
+      margin-bottom: 25px;
+
+      p {
+         font-size: 15px;
+         line-height: 16px;
+      }
+   }
+
+   .input__label {
+      p {
+         font-size: 13px;
+         line-height: 13px;
+      }
+   }
+
+   .advertise__placement-wrapper:not(:last-child) {
+      min-width: 320px;
+      width: 100%;
+   }
+
+   .advertise {
+
+      .input__field input,
+      .input__field select {
+         padding: 8px 10px;
+      }
+   }
+}
+
+@media screen and (max-width: 420px) {
+   .advertise {
+      .audit__form-container {
+         justify-content: flex-start;
+      }
    }
 }

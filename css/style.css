@@ -535,6 +535,12 @@ body {
   padding-right: 25px;
 }
 
+.menu__navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+}
+
 .menu__header {
   display: none;
 }
@@ -856,6 +862,10 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .banner-wrapper {
+    max-width: 141px;
+    height: 77px;
   }
 }
 
@@ -2328,17 +2338,15 @@ body {
   .audit__form-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     gap: 15px;
     margin-bottom: 35px;
+    padding: 0 10px;
   }
   .audit .scam__agree-btns {
-    padding: 0 5px;
+    padding: 0 10px;
   }
 }
 
@@ -2410,6 +2418,10 @@ body {
           justify-content: space-between;
 }
 
+.promotion__inputs-wrapper p {
+  white-space: nowrap;
+}
+
 .advertise .scam__agree-btns {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -2433,6 +2445,7 @@ body {
 }
 
 .advertise__placement-wrapper:not(:last-child) {
+  min-width: 420px;
   position: relative;
   background: #ccc;
   height: 181px;
@@ -2511,4 +2524,66 @@ input[type="file"]::file-selector-button {
   border: none;
   color: transparent;
   width: 36px;
+}
+
+@media screen and (max-width: 1170px) {
+  .promotion__inputs-wrapper {
+    width: 100%;
+  }
+  .advertise .audit__form-container:last-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advertise__title {
+    padding: 0 10px;
+  }
+  .advertise__placement-wrapper:last-child {
+    width: 100%;
+  }
+  .advertise .scam__agree-btns {
+    width: 49% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advertise .scam__agree-btns {
+    width: 100% !important;
+  }
+  #advertiseToken .scam__agree-btns {
+    padding: 0 10px;
+  }
+  .select-page {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .advertise__title {
+    margin-bottom: 25px;
+  }
+  .advertise__title p {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .input__label p {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .advertise__placement-wrapper:not(:last-child) {
+    min-width: 320px;
+    width: 100%;
+  }
+  .advertise .input__field input,
+  .advertise .input__field select {
+    padding: 8px 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .advertise .audit__form-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }

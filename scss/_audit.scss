@@ -116,14 +116,14 @@
    .audit {
       &__form-container {
          flex-wrap: wrap;
-         justify-content: center;
          align-items: center;
          gap: 15px;
          margin-bottom: 35px;
+         padding: 0 10px;
       }
 
       .scam__agree-btns {
-         padding: 0 5px;
+         padding: 0 10px;
       }
    }
 }
